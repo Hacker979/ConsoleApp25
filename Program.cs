@@ -8,10 +8,12 @@ namespace ConsoleApp25
 {
     class Program
     {
-        // Инициализировать одномерный массив с использованием конструктора , без указания размерности массива и без клавиатуры. 
+        // Заполнить одномерный массив соответствующими индексами и вывести с использованием цикла foreach.
         static void Main(string[] args)
         {
-            int[] mass = {1,2,3,4,5};
+            int[] mass = new int[5];
+            for (int i = 0; i < mass.Length; i++)
+                mass[i] = i;
             foreach (int i in mass)
                 Console.Write(i + " ");
         }
